@@ -14,9 +14,6 @@ import java.net.InetSocketAddress;
 public class EchoClient {
     private String host;
     private int port;
-feature
-    public EchoClient() {
-    }
 
     public EchoClient(String host, int port) {
         this.host = host;
