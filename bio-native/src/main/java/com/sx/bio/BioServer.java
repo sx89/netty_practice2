@@ -1,4 +1,4 @@
-package main.java.com.sx.bio;
+package com.sx.bio;
 
 import java.io.IOException;
 import java.net.ServerSocket;

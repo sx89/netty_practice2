@@ -1,4 +1,4 @@
-package main.java.com.sx.bio;
+package com.sx.bio;
 
 import java.io.BufferedReader;
 import java.io.IOException;
