@@ -14,8 +14,8 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext channelHandlerContext, Object msg) throws Exception {
         ByteBuf byteBuf = (ByteBuf) msg;
-        System.out.println("服务端接受到的数据:" + ((ByteBuf) msg).toString(CharsetUtil.UTF_8));
-        channelHandlerContext.writeAndFlush(byteBuf);
+        System.out.println("服务端接受到的数据是:" + ((ByteBuf) msg).toString(CharsetUtil.UTF_8));
+        channelHandlerContext.writeAndFlush( "本服务器收到了你发送的:"+byteBuf);
     }
 
     @Override
