@@ -663,7 +663,7 @@
 
         简介：源码讲解EventLoop和EventLoopGroup模块
 
-        1）高性能RPC框架的3个要素：IO模型、数据协议、线程模型
+        1）高性能RPC框架的3个要素：IO模型(五种unix网络编程模型)、数据协议(http/protobuf/THRIFT)、线程模型(多路复用/传统请求线程一对一)
 
 
 
@@ -838,7 +838,7 @@
             ChannelHandlerContext部分方法和Channel及ChannelPipeline重合,好比调用write方法，
 
             Channel、ChannelPipeline、ChannelHandlerContext 都可以调用此方法，前两者都会在整个管道流里传播，而ChannelHandlerContext就只会在后续的Handler里面传播
-
+![](pic/Snipaste_2019-07-23_22-51-27.jpg)
 
 
             2、AbstractChannelHandlerContext类

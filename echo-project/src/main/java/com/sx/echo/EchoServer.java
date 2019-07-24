@@ -48,7 +48,14 @@ public class EchoServer {
 
                                 @Override
                                 protected void initChannel(SocketChannel socketChannel) throws Exception {
-                                    socketChannel.pipeline().addLast(new EchoServerHandler());
+                                    //inbound 先进先出 outbound先进后出
+                                    // 服务端 先in再out  客户端 先out再in
+                                    // in调用in  用fire
+                                    //in调用out   用1.wirteFlush2.pipeline(广播)3.channel(广播)
+                                    socketChannel.pipeline().addLast(new OutboundHandler1());   //往上执行
+                                    socketChannel.pipeline().addLast(new OutboundHandler2());   //往上执行
+                                    socketChannel.pipeline().addLast(new InboundHandler1());      //往下执行
+                                    socketChannel.pipeline().addLast(new InboundHandler2());        //往下执行
 
                                 }
                             }
