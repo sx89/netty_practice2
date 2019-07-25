@@ -1,4 +1,4 @@
-package com.sx.TCP_stickybag;
+package com.sx.separator.line;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

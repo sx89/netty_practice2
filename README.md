@@ -1006,7 +1006,7 @@
             2)ReplayingDecoder
 
                 继承ByteToMessageDecoder，不需要检查缓冲区是否有足够的字节，但是ReplayingDecoder速度略满于ByteToMessageDecoder，不是所有的ByteBuf都支持
-
+ 
 
 
             选择：项目复杂性高则使用ReplayingDecoder，否则使用 ByteToMessageDecoder

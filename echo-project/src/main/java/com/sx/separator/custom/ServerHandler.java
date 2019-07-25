@@ -1,4 +1,4 @@
-package com.sx.TCP_stickybag;
+package com.sx.separator.custom;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

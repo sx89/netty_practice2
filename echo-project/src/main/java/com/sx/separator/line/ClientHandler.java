@@ -1,4 +1,5 @@
-package com.sx.TCP_stickybag;
+package com.sx.separator.line;
+
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
