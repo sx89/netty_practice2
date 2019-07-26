@@ -30,3 +30,8 @@ build/
 
 ### VS Code ###
 .vscode/
+bio-native/src/test/
+echo-project/src/main/resources/
+echo-project/src/test/
+millionServer/src/
+src/
