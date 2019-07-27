@@ -1450,12 +1450,11 @@
         查看命令
 
             cat /proc/sys/fs/file-max
-
-        永久修改全局文件句柄, 修改后生效 sysctl -p
-
+            
             vim  /etc/sysctl.conf
 
             增加 fs.file-max = 1000000
+             永久修改全局文件句柄, 修改后生效 sysctl -p
 
         启动
 

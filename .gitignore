@@ -7,4 +7,16 @@
 *.iml
 out
 gen
-*/target/*
+.idea/
+bio-native/bio-native.iml
+bio-native/src/test/
+bio-native/target/
+echo-project/echo-project.iml
+echo-project/src/main/resources/
+echo-project/src/test/
+echo-project/target/
+millionServer/millionServer.iml
+millionServer/target/
+netty-projects.iml
+out/
+.gitignore
